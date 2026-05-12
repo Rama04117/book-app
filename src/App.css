@@ -1,0 +1,74 @@
+/* General App Styling */
+.App {
+  font-family: sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #090707;
+}
+
+/* Header & Nav */
+header {
+  background-color:#b6aaad;;; 
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+nav button {
+  font-family:sans-serif;
+  background: none;
+  border: 1px solid white;
+  color: rgb(0, 0, 0);
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: white;
+}
+
+nav button:hover {
+  background-color: white;
+  color: #f6f6f6;
+}
+
+/* The Book Grid (RWD) */
+.book-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap to next line */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual Book Card */
+.book-card {
+  width: 200px;      /* Keeps the card a nice consistent size */
+  overflow: hidden;  /* Prevents the image from "bleeding" out of the card */
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 10px;
+}
+
+.book-card:hover {
+  transform: translateY(-5px); /* Lift effect when hovering */
+}
+
+/* Responsive Rule for Phones */
+@media (max-width: 600px) {
+  .book-card {
+    width: 100%; /* Take full width on small screens */
+  }
+}
+.book-card img {
+  display: block;
+  margin-bottom: 10px;
+}
+.book-img {
+  width: 100%;       /* Makes image fill the width of the card */
+  height: 250px;     /* Sets a fixed height so all cards look equal */
+  object-fit:fill; 
+  border-radius: 8px 8px 0 0; /* Rounds only the top corners */
+  display: inline-block;    /* Removes extra spacing at the bottom */
+}

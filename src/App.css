@@ -22,7 +22,10 @@ nav button {
   margin: 0 5px;
   cursor: pointer;
   border-radius: 4px;
+<<<<<<< HEAD
   background-color: white;
+=======
+>>>>>>> 5df0874d285f1711700faf9573966148290a78c9
 }
 
 nav button:hover {
